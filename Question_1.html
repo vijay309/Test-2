@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoover effect</title>
+    <style>
+        .inner{
+            margin-top: 280px;
+            margin-left: 500px;
+            display: flex;
+            flex-direction: row;
+            column-gap: 20px;
+            
+        }
+        .Component{
+            height:70px;
+            width:70px;
+            background-color: white;
+            border-radius:35px;
+            border-style:inherit;
+            box-shadow:0 0px 0px;
+        }
+        .display{
+            margin-top: 20px;
+            
+            border:none;
+            border-radius: 7px;
+            
+            opacity:0;
+            
+        }
+        .dp-1{
+            height:25px;
+            width:70px;
+            padding-left: 4px;
+            padding-top: 5px;
+
+        }
+        .dp-2{
+            height:25px;
+            width:70px;
+            padding-left: 19px;
+            padding-top: 5px;
+            
+
+        }
+        .dp-3{
+            height:25px;
+            width:70px;
+            padding-left:8px;
+            padding-top: 5px;
+
+        }
+        .dp-4{
+            height:25px;
+            width:70px;
+            padding-left: 2px;
+            padding-top: 5px;
+        }
+        .dp-5{
+            height:25px;
+            width:70px;
+            padding-left: 4px;
+            padding-top: 5px;
+
+        }
+
+        .display:hover{
+            opacity: 1;
+        }
+        .Component:hover{
+            box-shadow: 0 4px 10px;
+
+        }
+        .co-1{
+            background-color: white;
+        }
+        .co-1:hover{
+            background-color:rgb(45, 45, 167);
+        }
+        .co-2{
+            background-color: white;
+
+        }
+        .co-2:hover{
+            background-color: rgb(0, 172, 246);
+        }
+        .co-3{
+            background-color: white;
+        }
+        .co-3:hover{
+            background-color:rgb(230, 62, 143);
+        }
+        .co-4{
+            background-color: white;
+        }
+        .co-4:hover{
+            background-color: grey;
+        }
+        .co-5{
+            background-color: white;
+        }
+        .co-5:hover{
+            background-color: rgb(243, 15, 15);
+        }
+    
+
+       
+    </style>
+</head>
+<body style="background-color:rgb(195, 118, 130);">
+    <div class="inner">
+    <div class="Component co-1">
+        <div class="c1"><img style="height:40px; margin-top:14px; margin-left:16px; " src="./assets/faceebbok.png" alt=""></div>
+        <div class="display dp-1" style="padding-left: 10px; background-color: rgb(45, 45, 167);"> Facebook</div>
+    </div>
+    <div class="Component co-2" class="co-2">
+        <div class="c1"><img style="height:40px;margin-top:14px; margin-left:16px;"src="./assets/Twitter.png" alt=""></div>
+        <div class="display dp-2" style="background-color: rgb(0, 172, 246);">Twitter</div>
+    </div>
+    <div class="Component co-3">
+        <div class="c1"><img style="height:40px;margin-top:14px; margin-left:14px;" src="./assets/instagram.png" alt=""></div>
+        <div class="display dp-3" style="background-color:rgb(230, 62, 143);">instagram</div>
+    </div>
+    <div class="Component co-4">
+        <div class="c1"><img style="height:40px;margin-top:14px; margin-left:14px;"  src="./assets/git.png" alt=""></div>
+        <div class="display dp-4" style="background-color:gray;">GitHub</div>
+    </div>
+    <div class="Component co-5">
+        <div class="c1"><img style="height:40px;margin-top:14px; margin-left:14px; border-radius: 60px;" src="./assets/youtube.png" alt=""></div>
+        <div class="display dp-5" style="background-color:rgb(243, 15, 15);">Youtube</div>
+    </div>
+</div>
+</body>
+</html>
