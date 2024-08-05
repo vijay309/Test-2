@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Sharing App Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom left, #dae8fc, #6fa3ef);
+            display: flex;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 100%;
+        }
+
+        .sidebar {
+            width: 80px;
+            background-color: #ffffff;
+            border-right: 1px solid #e0e0e0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 0;
+        }
+
+        .sidebar img {
+            width: 30px;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            padding: 20px;
+        }
+
+        .search-bar {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input {
+            border: none;
+            outline: none;
+            width: 100%;
+            padding: 10px;
+        }
+
+        .quick-access {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+
+        .quick-access div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 18%;
+        }
+
+        .preview {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .preview img {
+            width: 30%;
+            border-radius: 8px;
+        }
+
+        .downloads {
+            width: 300px;
+            background-color: #ffffff;
+            border-left: 1px solid #e0e0e0;
+            padding: 20px;
+        }
+
+        .downloads div {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <img src="home_icon.png" alt="Home">
+            <img src="folder_icon.png" alt="Folder">
+            <img src="settings_icon.png" alt="Settings">
+        </div>
+        <div class="content">
+            <div class="search-bar">
+                <input type="text" placeholder="e.g. files.doc">
+            </div>
+            <div class="quick-access">
+                <div>
+                    <img src="images_icon.png" alt="Images">
+                    <span>Images</span>
+                </div>
+                <div>
+                    <img src="music_icon.png" alt="Music">
+                    <span>Music</span>
+                </div>
+                <div>
+                    <img src="video_icon.png" alt="Video">
+                    <span>Video</span>
+                </div>
+                <div>
+                    <img src="docs_icon.png" alt="Docs">
+                    <span>Docs</span>
+                </div>
+                <div>
+                    <img src="apps_icon.png" alt="Apps">
+                    <span>Apps</span>
+                </div>
+            </div>
+            <div class="preview">
+                <img src="preview1.png" alt="Preview 1">
+                <img src="preview2.png" alt="Preview 2">
+                <img src="preview3.png" alt="Preview 3">
+            </div>
+        </div>
+        <div class="downloads">
+            <div>
+                <h3>Downloads</h3>
+                <p>Today</p>
+                <div>Glitter.mp4 34.45 MB</div>
+            </div>
+            <div>
+                <p>Yesterday</p>
+                <div>Glitter.mp4 34.45 MB</div>
+            </div>
+            <div>
+                <h3>File Received</h3>
+                <div>Received 3 images total 50.3 MB</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
